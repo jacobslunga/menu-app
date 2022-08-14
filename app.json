@@ -1,28 +1,36 @@
 {
   "expo": {
-    "name": "menu-app",
-    "slug": "menu-app",
-    "version": "1.0.0",
+    "name": "Menü",
+    "slug": "Menu",
+    "version": "1.0.3",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Menu-Icons/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Menu-Icons/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FCF8E8"
     },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/Menu-Icons/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.menuapp.se"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Menu-Icons/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
